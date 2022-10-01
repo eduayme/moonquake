@@ -11,7 +11,7 @@ body {
 }
 
 .logo {
-	width: 300px;
+	width: 200px;
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -21,13 +21,13 @@ body {
 	position: absolute;
 	top: 26px;
 	right: 40px;
-	padding: 12px 26px;
+	padding: 8px 16px;
 	background: transparent;
 	color: white;
 	border: 1px solid white;
 	border-radius: 6px;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 18px;
 }
 .animation-btn:hover {
 	background: linear-gradient(204.09deg, #071945 -64.78%, #071332 97.26%);
