@@ -71,3 +71,60 @@ body {
 	height: 16px;
 	border-radius: 2px;
 }
+
+.info {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-content {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	background: transparent;
+	backdrop-filter: blur(0px);
+	color: white;
+	border: 1px solid white;
+	border-radius: 6px;
+	text-align: center;
+	display: inline-grid;
+	grid-template-columns: max-content max-content max-content;
+}
+.info:hover {
+	backdrop-filter: blur(2px);
+}
+.info-action {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+	padding: 12px 20px;
+	border-radius: 6px;
+}
+.info-card:hover,
+.info-action:hover {
+	background: linear-gradient(204.09deg, #071945 -64.78%, #071332 97.26%);
+}
+.info-card {
+	cursor: pointer;
+	padding: 20px 40px;
+	border-radius: 6px;
+}
+.info-card h1 {
+	margin-top: 0;
+}
+.info-card-details {
+	display: grid;
+}
+p {
+	margin: 0.5rem;
+}
+p span {
+	font-weight: bold;
+	margin-left: 0.5rem;
+}

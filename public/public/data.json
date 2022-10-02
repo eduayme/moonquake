@@ -1,6 +1,6 @@
 [
 	{
-	  "Date YYYYMMDD": 19691120,
+	  "Date_YYYYMMDD": 19691120,
 	  "Amplitude": 30,
 	  "Latitude": -3.94,
 	  "Longitude": -21.2,
@@ -8,10 +8,13 @@
 	  "Class": 3,
 	  "X_coord": 0.01860240604932242,
 	  "Y_coord": -0.007215397784877238,
-	  "Z_coord": -0.0013742357811239757
+	  "Z_coord": -0.0013742357811239757,
+	  "start": 2217,
+	  "finish": 2322,
+	  "duration": 65
 	},
 	{
-	  "Date YYYYMMDD": 19700415,
+	  "Date_YYYYMMDD": 19700415,
 	  "Amplitude": 1,
 	  "Latitude": -2.75,
 	  "Longitude": -27.86,
@@ -19,10 +22,13 @@
 	  "Class": 3,
 	  "X_coord": 0.0176614791786,
 	  "Y_coord": -0.009335491036754014,
-	  "Z_coord": -0.0009595625704268789
+	  "Z_coord": -0.0009595625704268789,
+	  "start": 1215,
+	  "finish": 1310,
+	  "duration": 55
 	},
 	{
-	  "Date YYYYMMDD": 19710204,
+	  "Date_YYYYMMDD": 19710204,
 	  "Amplitude": 570,
 	  "Latitude": -8.09,
 	  "Longitude": -26.02,
@@ -30,10 +36,13 @@
 	  "Class": 3,
 	  "X_coord": 0.01779395813942747,
 	  "Y_coord": -0.008686383391259293,
-	  "Z_coord": -0.00281456876134827
+	  "Z_coord": -0.00281456876134827,
+	  "start": 740,
+	  "finish": 1020,
+	  "duration": 160
 	},
 	{
-	  "Date YYYYMMDD": 19710207,
+	  "Date_YYYYMMDD": 19710207,
 	  "Amplitude": 4.75,
 	  "Latitude": -3.42,
 	  "Longitude": -19.67,
@@ -41,10 +50,13 @@
 	  "Class": 3,
 	  "X_coord": 0.018799398134422614,
 	  "Y_coord": -0.006720055855231438,
-	  "Z_coord": -0.001193096427803414
+	  "Z_coord": -0.001193096427803414,
+	  "start": 1840,
+	  "finish": 1915,
+	  "duration": 35
 	},
 	{
-	  "Date YYYYMMDD": 19710729,
+	  "Date_YYYYMMDD": 19710729,
 	  "Amplitude": 250,
 	  "Latitude": -1.51,
 	  "Longitude": -11.81,
@@ -52,10 +64,13 @@
 	  "Class": 3,
 	  "X_coord": 0.01956983548915668,
 	  "Y_coord": -0.004091916417929402,
-	  "Z_coord": -0.0005270284205082932
+	  "Z_coord": -0.0005270284205082932,
+	  "start": 2100,
+	  "finish": 2330,
+	  "duration": 150
 	},
 	{
-	  "Date YYYYMMDD": 19710803,
+	  "Date_YYYYMMDD": 19710803,
 	  "Amplitude": 3,
 	  "Latitude": 26.36,
 	  "Longitude": 0.25,
@@ -63,10 +78,13 @@
 	  "Class": 3,
 	  "X_coord": 0.017920268527306705,
 	  "Y_coord": 0.00007819241838581617,
-	  "Z_coord": 0.00888019492212461
+	  "Z_coord": 0.00888019492212461,
+	  "start": 2235,
+	  "finish": 2300,
+	  "duration": 25
 	},
 	{
-	  "Date YYYYMMDD": 19721210,
+	  "Date_YYYYMMDD": 19721210,
 	  "Amplitude": 2.4,
 	  "Latitude": -4.21,
 	  "Longitude": -12.31,
@@ -74,10 +92,13 @@
 	  "Class": 3,
 	  "X_coord": 0.01948744194114301,
 	  "Y_coord": -0.004252512505576353,
-	  "Z_coord": -0.0014682452044864035
+	  "Z_coord": -0.0014682452044864035,
+	  "start": 2315,
+	  "finish": 5,
+	  "duration": 50
 	},
 	{
-	  "Date YYYYMMDD": 19720513,
+	  "Date_YYYYMMDD": 19720513,
 	  "Amplitude": 1.5,
 	  "Latitude": 1.2,
 	  "Longitude": -16.49,
@@ -85,10 +106,13 @@
 	  "Class": 1,
 	  "X_coord": 0.0191731798882474,
 	  "Y_coord": -0.00567571484420043,
-	  "Z_coord": 0.00041884839766713917
+	  "Z_coord": 0.00041884839766713917,
+	  "start": 2210,
+	  "finish": 2240,
+	  "duration": 30
 	},
 	{
-	  "Date YYYYMMDD": 19720731,
+	  "Date_YYYYMMDD": 19720731,
 	  "Amplitude": 1.5,
 	  "Latitude": 23.42,
 	  "Longitude": 7.23,
@@ -96,10 +120,13 @@
 	  "Class": 1,
 	  "X_coord": 0.018206398410618132,
 	  "Y_coord": 0.0023096886202072734,
-	  "Z_coord": 0.007949364464630277
+	  "Z_coord": 0.007949364464630277,
+	  "start": 2318,
+	  "finish": 2355,
+	  "duration": 37
 	},
 	{
-	  "Date YYYYMMDD": 19720829,
+	  "Date_YYYYMMDD": 19720829,
 	  "Amplitude": 21,
 	  "Latitude": 15.19,
 	  "Longitude": 20.57,
@@ -107,10 +134,13 @@
 	  "Class": 1,
 	  "X_coord": 0.018070667527490893,
 	  "Y_coord": 0.006781520940275385,
-	  "Z_coord": 0.005240414949934086
+	  "Z_coord": 0.005240414949934086,
+	  "start": 2259,
+	  "finish": 50,
+	  "duration": 111
 	},
 	{
-	  "Date YYYYMMDD": 19731224,
+	  "Date_YYYYMMDD": 19731224,
 	  "Amplitude": 6,
 	  "Latitude": -17.94,
 	  "Longitude": -20.74,
@@ -118,10 +148,13 @@
 	  "Class": 1,
 	  "X_coord": 0.01779454747988332,
 	  "Y_coord": -0.006738199664410754,
-	  "Z_coord": -0.006160417621291023
+	  "Z_coord": -0.006160417621291023,
+	  "start": 1138,
+	  "finish": 1220,
+	  "duration": 42
 	},
 	{
-	  "Date YYYYMMDD": 19740717,
+	  "Date_YYYYMMDD": 19740717,
 	  "Amplitude": 3.5,
 	  "Latitude": 20.35,
 	  "Longitude": 6.49,
@@ -129,10 +162,13 @@
 	  "Class": 1,
 	  "X_coord": 0.018631547848743508,
 	  "Y_coord": 0.0021195027717631617,
-	  "Z_coord": 0.006955079637248561
+	  "Z_coord": 0.006955079637248561,
+	  "start": 2147,
+	  "finish": 2220,
+	  "duration": 33
 	},
 	{
-	  "Date YYYYMMDD": 19741121,
+	  "Date_YYYYMMDD": 19741121,
 	  "Amplitude": 1.9,
 	  "Latitude": -8.88,
 	  "Longitude": 21.73,
@@ -140,10 +176,13 @@
 	  "Class": 1,
 	  "X_coord": 0.018356088148911657,
 	  "Y_coord": 0.007315910273188945,
-	  "Z_coord": -0.003087310276605423
+	  "Z_coord": -0.003087310276605423,
+	  "start": 2332,
+	  "finish": 10,
+	  "duration": 38
 	},
 	{
-	  "Date YYYYMMDD": 19741215,
+	  "Date_YYYYMMDD": 19741215,
 	  "Amplitude": 6,
 	  "Latitude": 2.44,
 	  "Longitude": -8.07,
@@ -151,10 +190,13 @@
 	  "Class": 1,
 	  "X_coord": 0.019783992557626626,
 	  "Y_coord": -0.0028051111927786298,
-	  "Z_coord": 0.0008514632557675905
+	  "Z_coord": 0.0008514632557675905,
+	  "start": 1300,
+	  "finish": 1330,
+	  "duration": 30
 	},
 	{
-	  "Date YYYYMMDD": 19750305,
+	  "Date_YYYYMMDD": 19750305,
 	  "Amplitude": 65,
 	  "Latitude": -49.93,
 	  "Longitude": 3.42,
@@ -162,10 +204,13 @@
 	  "Class": 1,
 	  "X_coord": 0.012851532017621561,
 	  "Y_coord": 0.0007680236470815161,
-	  "Z_coord": -0.015305171167862563
+	  "Z_coord": -0.015305171167862563,
+	  "start": 2152,
+	  "finish": 2320,
+	  "duration": 88
 	},
 	{
-	  "Date YYYYMMDD": 19760528,
+	  "Date_YYYYMMDD": 19760528,
 	  "Amplitude": 0.01,
 	  "Latitude": -14.33,
 	  "Longitude": -8.95,
@@ -173,10 +218,13 @@
 	  "Class": 1,
 	  "X_coord": 0.019141791507602823,
 	  "Y_coord": -0.0030146408929595005,
-	  "Z_coord": -0.004950127085839392
+	  "Z_coord": -0.004950127085839392,
+	  "start": 2216,
+	  "finish": 2244,
+	  "duration": 28
 	},
 	{
-	  "Date YYYYMMDD": 19720104,
+	  "Date_YYYYMMDD": 19720104,
 	  "Amplitude": 1.5,
 	  "Latitude": 70.76,
 	  "Longitude": 2.71,
@@ -184,10 +232,13 @@
 	  "Class": 1,
 	  "X_coord": 0.006583146729152954,
 	  "Y_coord": 0.00031160485952700566,
-	  "Z_coord": 0.018882930957718452
+	  "Z_coord": 0.018882930957718452,
+	  "start": 1635,
+	  "finish": 1710,
+	  "duration": 35
 	},
 	{
-	  "Date YYYYMMDD": 19730926,
+	  "Date_YYYYMMDD": 19730926,
 	  "Amplitude": 8,
 	  "Latitude": 28.16,
 	  "Longitude": 37.94,
@@ -195,10 +246,13 @@
 	  "Class": 1,
 	  "X_coord": 0.013906088395512368,
 	  "Y_coord": 0.010841194717914521,
-	  "Z_coord": 0.009438707677667454
+	  "Z_coord": 0.009438707677667454,
+	  "start": 2358,
+	  "finish": 50,
+	  "duration": 52
 	},
 	{
-	  "Date YYYYMMDD": 19740419,
+	  "Date_YYYYMMDD": 19740419,
 	  "Amplitude": 2.1,
 	  "Latitude": 7.64,
 	  "Longitude": -34.55,
@@ -206,10 +260,13 @@
 	  "Class": 1,
 	  "X_coord": 0.01632640373631911,
 	  "Y_coord": -0.01124181634751111,
-	  "Z_coord": 0.0026589671392360887
+	  "Z_coord": 0.0026589671392360887,
+	  "start": 2344,
+	  "finish": 10,
+	  "duration": 26
 	},
 	{
-	  "Date YYYYMMDD": 19750412,
+	  "Date_YYYYMMDD": 19750412,
 	  "Amplitude": 120,
 	  "Latitude": 3.14,
 	  "Longitude": 41.61,
@@ -217,10 +274,13 @@
 	  "Class": 1,
 	  "X_coord": 0.014931193730841088,
 	  "Y_coord": 0.013261195031066512,
-	  "Z_coord": 0.0010955181970686725
+	  "Z_coord": 0.0010955181970686725,
+	  "start": 1815,
+	  "finish": 2130,
+	  "duration": 195
 	},
 	{
-	  "Date YYYYMMDD": 19760113,
+	  "Date_YYYYMMDD": 19760113,
 	  "Amplitude": 100,
 	  "Latitude": -38.17,
 	  "Longitude": 59.78,
@@ -228,10 +288,13 @@
 	  "Class": 1,
 	  "X_coord": 0.007914033457095352,
 	  "Y_coord": 0.013586759667890073,
-	  "Z_coord": -0.01235993673798418
+	  "Z_coord": -0.01235993673798418,
+	  "start": 714,
+	  "finish": 910,
+	  "duration": 116
 	},
 	{
-	  "Date YYYYMMDD": 19770417,
+	  "Date_YYYYMMDD": 19770417,
 	  "Amplitude": 90,
 	  "Latitude": -18.5,
 	  "Longitude": -59.98,
@@ -239,10 +302,13 @@
 	  "Class": 1,
 	  "X_coord": 0.009488969537003426,
 	  "Y_coord": -0.016422136253705838,
-	  "Z_coord": -0.006346093128101843
+	  "Z_coord": -0.006346093128101843,
+	  "start": 2335,
+	  "finish": 240,
+	  "duration": 185
 	},
 	{
-	  "Date YYYYMMDD": 19770628,
+	  "Date_YYYYMMDD": 19770628,
 	  "Amplitude": 60,
 	  "Latitude": -9.82,
 	  "Longitude": -73.54,
@@ -250,10 +316,13 @@
 	  "Class": 1,
 	  "X_coord": 0.0055838885848432315,
 	  "Y_coord": -0.01889933319044883,
-	  "Z_coord": -0.0034110692207073106
+	  "Z_coord": -0.0034110692207073106,
+	  "start": 2225,
+	  "finish": 100,
+	  "duration": 155
 	},
 	{
-	  "Date YYYYMMDD": 19750504,
+	  "Date_YYYYMMDD": 19750504,
 	  "Amplitude": 120,
 	  "Latitude": -36.4,
 	  "Longitude": -121.3,
@@ -261,10 +330,13 @@
 	  "Class": 1,
 	  "X_coord": -0.00836315421519341,
 	  "Y_coord": -0.013754972249397746,
-	  "Z_coord": -0.01186837773207403
+	  "Z_coord": -0.01186837773207403,
+	  "start": 1005,
+	  "finish": 1310,
+	  "duration": 185
 	},
 	{
-	  "Date YYYYMMDD": 19761114,
+	  "Date_YYYYMMDD": 19761114,
 	  "Amplitude": 60,
 	  "Latitude": 21.54,
 	  "Longitude": -85.07,
@@ -272,10 +344,13 @@
 	  "Class": 1,
 	  "X_coord": 0.001598735435363658,
 	  "Y_coord": -0.01853440565387144,
-	  "Z_coord": 0.007343013827131955
+	  "Z_coord": 0.007343013827131955,
+	  "start": 2316,
+	  "finish": 200,
+	  "duration": 164
 	},
 	{
-	  "Date YYYYMMDD": 19730930,
+	  "Date_YYYYMMDD": 19730930,
 	  "Amplitude": 4,
 	  "Latitude": 33.14,
 	  "Longitude": 137.69,
@@ -283,10 +358,13 @@
 	  "Class": 1,
 	  "X_coord": -0.012384446201568524,
 	  "Y_coord": 0.011272930764495167,
-	  "Z_coord": 0.010933733317552308
+	  "Z_coord": 0.010933733317552308,
+	  "start": 1257,
+	  "finish": 1310,
+	  "duration": 13
 	},
 	{
-	  "Date YYYYMMDD": 19750213,
+	  "Date_YYYYMMDD": 19750213,
 	  "Amplitude": 7.2,
 	  "Latitude": -16.15,
 	  "Longitude": -24.62,
@@ -294,10 +372,13 @@
 	  "Class": 0,
 	  "X_coord": 0.017464302027099955,
 	  "Y_coord": -0.008003156961512355,
-	  "Z_coord": -0.005563059711672054
+	  "Z_coord": -0.005563059711672054,
+	  "start": 2205,
+	  "finish": 2320,
+	  "duration": 75
 	},
 	{
-	  "Date YYYYMMDD": 19720917,
+	  "Date_YYYYMMDD": 19720917,
 	  "Amplitude": 3.8,
 	  "Latitude": 11.99,
 	  "Longitude": 49.33,
@@ -305,10 +386,13 @@
 	  "Class": 0,
 	  "X_coord": 0.012749675137456255,
 	  "Y_coord": 0.014838573376859373,
-	  "Z_coord": 0.004154819373798342
+	  "Z_coord": 0.004154819373798342,
+	  "start": 2332,
+	  "finish": 2355,
+	  "duration": 23
 	},
 	{
-	  "Date YYYYMMDD": 19721206,
+	  "Date_YYYYMMDD": 19721206,
 	  "Amplitude": 2.3,
 	  "Latitude": 45.84,
 	  "Longitude": 36.81,
@@ -316,10 +400,13 @@
 	  "Class": 0,
 	  "X_coord": 0.011155364476159882,
 	  "Y_coord": 0.008348315841508663,
-	  "Z_coord": 0.014347942919263572
+	  "Z_coord": 0.014347942919263572,
+	  "start": 2343,
+	  "finish": 20,
+	  "duration": 37
 	},
 	{
-	  "Date YYYYMMDD": 19750112,
+	  "Date_YYYYMMDD": 19750112,
 	  "Amplitude": 2,
 	  "Latitude": 64.83,
 	  "Longitude": 56.25,
@@ -327,10 +414,13 @@
 	  "Class": 0,
 	  "X_coord": 0.004725741146836393,
 	  "Y_coord": 0.007072571433220763,
-	  "Z_coord": 0.018100997318796747
+	  "Z_coord": 0.018100997318796747,
+	  "start": 1437,
+	  "finish": 1510,
+	  "duration": 33
 	},
 	{
-	  "Date YYYYMMDD": 19760104,
+	  "Date_YYYYMMDD": 19760104,
 	  "Amplitude": 3.9,
 	  "Latitude": 42.28,
 	  "Longitude": 32.12,
@@ -338,10 +428,13 @@
 	  "Class": 0,
 	  "X_coord": 0.012532388172029181,
 	  "Y_coord": 0.007867649677304458,
-	  "Z_coord": 0.013455085851111992
+	  "Z_coord": 0.013455085851111992,
+	  "start": 1546,
+	  "finish": 1628,
+	  "duration": 42
 	},
 	{
-	  "Date YYYYMMDD": 19760306,
+	  "Date_YYYYMMDD": 19760306,
 	  "Amplitude": 1.1,
 	  "Latitude": 50.23,
 	  "Longitude": -24.76,
@@ -349,10 +442,13 @@
 	  "Class": 0,
 	  "X_coord": 0.011617982027179074,
 	  "Y_coord": -0.005358421938657661,
-	  "Z_coord": 0.015372371578369305
+	  "Z_coord": 0.015372371578369305,
+	  "start": 2110,
+	  "finish": 2140,
+	  "duration": 30
 	},
 	{
-	  "Date YYYYMMDD": 19740711,
+	  "Date_YYYYMMDD": 19740711,
 	  "Amplitude": 2.5,
 	  "Latitude": 25.01,
 	  "Longitude": 87.09,
@@ -360,10 +456,13 @@
 	  "Class": 0,
 	  "X_coord": 0.0009201401500824894,
 	  "Y_coord": 0.018101308688032256,
-	  "Z_coord": 0.008455528717045094
+	  "Z_coord": 0.008455528717045094,
+	  "start": 1758,
+	  "finish": 1825,
+	  "duration": 27
 	},
 	{
-	  "Date YYYYMMDD": 19750103,
+	  "Date_YYYYMMDD": 19750103,
 	  "Amplitude": 150,
 	  "Latitude": 27.41,
 	  "Longitude": -90.57,
@@ -371,10 +470,13 @@
 	  "Class": 0,
 	  "X_coord": -0.00017662754119709512,
 	  "Y_coord": -0.017753822446092776,
-	  "Z_coord": 0.009207094615800526
+	  "Z_coord": 0.009207094615800526,
+	  "start": 147,
+	  "finish": 420,
+	  "duration": 153
 	},
 	{
-	  "Date YYYYMMDD": 19730930,
+	  "Date_YYYYMMDD": 19730930,
 	  "Amplitude": 4,
 	  "Latitude": -15.27,
 	  "Longitude": -34.04,
@@ -382,10 +484,13 @@
 	  "Class": 2,
 	  "X_coord": 0.015987839427624412,
 	  "Y_coord": -0.010800181239761241,
-	  "Z_coord": -0.005267359454680084
+	  "Z_coord": -0.005267359454680084,
+	  "start": 1257,
+	  "finish": 1310,
+	  "duration": 13
 	},
 	{
-	  "Date YYYYMMDD": 19760702,
+	  "Date_YYYYMMDD": 19760702,
 	  "Amplitude": 4.7,
 	  "Latitude": 47.22,
 	  "Longitude": 47.57,
@@ -393,10 +498,13 @@
 	  "Class": 2,
 	  "X_coord": 0.009164774209960102,
 	  "Y_coord": 0.010026160630014255,
-	  "Z_coord": 0.014679339791066979
+	  "Z_coord": 0.014679339791066979,
+	  "start": 2307,
+	  "finish": 2355,
+	  "duration": 48
 	},
 	{
-	  "Date YYYYMMDD": 19760702,
+	  "Date_YYYYMMDD": 19760702,
 	  "Amplitude": 4.7,
 	  "Latitude": 22.94,
 	  "Longitude": 48.41,
@@ -404,10 +512,13 @@
 	  "Class": 2,
 	  "X_coord": 0.012225968474057455,
 	  "Y_coord": 0.013775281499217218,
-	  "Z_coord": 0.007795339279895205
+	  "Z_coord": 0.007795339279895205,
+	  "start": 2307,
+	  "finish": 2355,
+	  "duration": 48
 	},
 	{
-	  "Date YYYYMMDD": 19770516,
+	  "Date_YYYYMMDD": 19770516,
 	  "Amplitude": 2,
 	  "Latitude": -28,
 	  "Longitude": -28.1,
@@ -415,10 +526,13 @@
 	  "Class": 2,
 	  "X_coord": 0.015577435858929779,
 	  "Y_coord": -0.008317576134612658,
-	  "Z_coord": -0.009389431255717817
+	  "Z_coord": -0.009389431255717817,
+	  "start": 2202,
+	  "finish": 2240,
+	  "duration": 38
 	},
 	{
-	  "Date YYYYMMDD": 19770416,
+	  "Date_YYYYMMDD": 19770416,
 	  "Amplitude": 2.7,
 	  "Latitude": -37.8,
 	  "Longitude": -30.8,
@@ -426,10 +540,13 @@
 	  "Class": 2,
 	  "X_coord": 0.013574229359789419,
 	  "Y_coord": -0.008091864724573808,
-	  "Z_coord": -0.012258141073059527
+	  "Z_coord": -0.012258141073059527,
+	  "start": 2252,
+	  "finish": 2325,
+	  "duration": 33
 	},
 	{
-	  "Date YYYYMMDD": 19770618,
+	  "Date_YYYYMMDD": 19770618,
 	  "Amplitude": 2,
 	  "Latitude": 8.83,
 	  "Longitude": 15.75,
@@ -437,10 +554,13 @@
 	  "Class": 2,
 	  "X_coord": 0.019020967088392914,
 	  "Y_coord": 0.005364467528242081,
-	  "Z_coord": 0.003070065009199294
+	  "Z_coord": 0.003070065009199294,
+	  "start": 2127,
+	  "finish": 2200,
+	  "duration": 33
 	},
 	{
-	  "Date YYYYMMDD": 19730528,
+	  "Date_YYYYMMDD": 19730528,
 	  "Amplitude": 2.1,
 	  "Latitude": -25.82,
 	  "Longitude": -30.48,
@@ -448,10 +568,13 @@
 	  "Class": 2,
 	  "X_coord": 0.015515387752573023,
 	  "Y_coord": -0.009131968266951881,
-	  "Z_coord": -0.008710906867754406
+	  "Z_coord": -0.008710906867754406,
+	  "start": 2330,
+	  "finish": 2355,
+	  "duration": 25
 	},
 	{
-	  "Date YYYYMMDD": 19721008,
+	  "Date_YYYYMMDD": 19721008,
 	  "Amplitude": 1.2,
 	  "Latitude": 6.66,
 	  "Longitude": 4.06,
@@ -459,10 +582,13 @@
 	  "Class": 2,
 	  "X_coord": 0.019815184965964613,
 	  "Y_coord": 0.0014064661250933923,
-	  "Z_coord": 0.002319546896179227
+	  "Z_coord": 0.002319546896179227,
+	  "start": 2318,
+	  "finish": 2350,
+	  "duration": 32
 	},
 	{
-	  "Date YYYYMMDD": 19721107,
+	  "Date_YYYYMMDD": 19721107,
 	  "Amplitude": 2.1,
 	  "Latitude": 21.56,
 	  "Longitude": -16.27,
@@ -470,10 +596,13 @@
 	  "Class": 2,
 	  "X_coord": 0.01785574791422342,
 	  "Y_coord": -0.005211238945188206,
-	  "Z_coord": 0.007349507131764667
+	  "Z_coord": 0.007349507131764667,
+	  "start": 2138,
+	  "finish": 2150,
+	  "duration": 12
 	},
 	{
-	  "Date YYYYMMDD": 19730105,
+	  "Date_YYYYMMDD": 19730105,
 	  "Amplitude": 5.5,
 	  "Latitude": 17.54,
 	  "Longitude": 31.01,
@@ -481,10 +610,13 @@
 	  "Class": 2,
 	  "X_coord": 0.01634458227636138,
 	  "Y_coord": 0.009824698807902175,
-	  "Z_coord": 0.006027430924138326
+	  "Z_coord": 0.006027430924138326,
+	  "start": 2252,
+	  "finish": 2320,
+	  "duration": 28
 	},
 	{
-	  "Date YYYYMMDD": 19720515,
+	  "Date_YYYYMMDD": 19720515,
 	  "Amplitude": 1.5,
 	  "Latitude": 20.46,
 	  "Longitude": -34.84,
@@ -492,10 +624,13 @@
 	  "Class": 2,
 	  "X_coord": 0.015379494346952011,
 	  "Y_coord": -0.010704958137465827,
-	  "Z_coord": 0.0069910675084120955
+	  "Z_coord": 0.0069910675084120955,
+	  "start": 2012,
+	  "finish": 2040,
+	  "duration": 28
 	},
 	{
-	  "Date YYYYMMDD": 19770612,
+	  "Date_YYYYMMDD": 19770612,
 	  "Amplitude": 2.4,
 	  "Latitude": -32.89,
 	  "Longitude": -34.32,
@@ -503,10 +638,13 @@
 	  "Class": 2,
 	  "X_coord": 0.01387043245164525,
 	  "Y_coord": -0.009468863890318813,
-	  "Z_coord": -0.01086055800734764
+	  "Z_coord": -0.01086055800734764,
+	  "start": 2011,
+	  "finish": 2040,
+	  "duration": 29
 	},
 	{
-	  "Date YYYYMMDD": 19770609,
+	  "Date_YYYYMMDD": 19770609,
 	  "Amplitude": 3,
 	  "Latitude": 33.31,
 	  "Longitude": 53.67,
@@ -514,10 +652,13 @@
 	  "Class": 2,
 	  "X_coord": 0.00990209650773602,
 	  "Y_coord": 0.013465288213805094,
-	  "Z_coord": 0.010983373710779565
+	  "Z_coord": 0.010983373710779565,
+	  "start": 2217,
+	  "finish": 2250,
+	  "duration": 33
 	},
 	{
-	  "Date YYYYMMDD": 19770516,
+	  "Date_YYYYMMDD": 19770516,
 	  "Amplitude": 2,
 	  "Latitude": 20.12,
 	  "Longitude": 16.21,
@@ -525,10 +666,13 @@
 	  "Class": 2,
 	  "X_coord": 0.018032905871446445,
 	  "Y_coord": 0.005242456623058154,
-	  "Z_coord": 0.00687974958751451
+	  "Z_coord": 0.00687974958751451,
+	  "start": 2202,
+	  "finish": 2240,
+	  "duration": 38
 	},
 	{
-	  "Date YYYYMMDD": 19720517,
+	  "Date_YYYYMMDD": 19720517,
 	  "Amplitude": 4,
 	  "Latitude": 11.22,
 	  "Longitude": -30.38,
@@ -536,10 +680,13 @@
 	  "Class": 2,
 	  "X_coord": 0.01692403822810001,
 	  "Y_coord": -0.009921334802200293,
-	  "Z_coord": 0.0038915351465018014
+	  "Z_coord": 0.0038915351465018014,
+	  "start": 2332,
+	  "finish": 20,
+	  "duration": 48
 	},
 	{
-	  "Date YYYYMMDD": 19721011,
+	  "Date_YYYYMMDD": 19721011,
 	  "Amplitude": 7,
 	  "Latitude": 7.71,
 	  "Longitude": 113.03,
@@ -547,10 +694,13 @@
 	  "Class": 2,
 	  "X_coord": -0.007753528115134426,
 	  "Y_coord": 0.01823960886514326,
-	  "Z_coord": 0.0026831828514671473
+	  "Z_coord": 0.0026831828514671473,
+	  "start": 1939,
+	  "finish": 2030,
+	  "duration": 51
 	},
 	{
-	  "Date YYYYMMDD": 19720614,
+	  "Date_YYYYMMDD": 19720614,
 	  "Amplitude": 2,
 	  "Latitude": 6.99,
 	  "Longitude": -8.42,
@@ -558,10 +708,13 @@
 	  "Class": 2,
 	  "X_coord": 0.019637376013506284,
 	  "Y_coord": -0.002906799970880147,
-	  "Z_coord": 0.0024339221913321865
+	  "Z_coord": 0.0024339221913321865,
+	  "start": 2227,
+	  "finish": 2250,
+	  "duration": 23
 	},
 	{
-	  "Date YYYYMMDD": 19730627,
+	  "Date_YYYYMMDD": 19730627,
 	  "Amplitude": 6,
 	  "Latitude": -0.9,
 	  "Longitude": -10.32,
@@ -569,10 +722,13 @@
 	  "Class": 2,
 	  "X_coord": 0.019674023849951906,
 	  "Y_coord": -0.0035824708825990346,
-	  "Z_coord": -0.0003141463462364135
+	  "Z_coord": -0.0003141463462364135,
+	  "start": 2351,
+	  "finish": 9999,
+	  "duration": 4608
 	},
 	{
-	  "Date YYYYMMDD": 19720608,
+	  "Date_YYYYMMDD": 19720608,
 	  "Amplitude": 1.5,
 	  "Latitude": 12.7,
 	  "Longitude": -23.1,
@@ -580,10 +736,13 @@
 	  "Class": 2,
 	  "X_coord": 0.017946352898027124,
 	  "Y_coord": -0.007654768202377754,
-	  "Z_coord": 0.00439692408705675
+	  "Z_coord": 0.00439692408705675,
+	  "start": 2223,
+	  "finish": 2250,
+	  "duration": 27
 	},
 	{
-	  "Date YYYYMMDD": 19730503,
+	  "Date_YYYYMMDD": 19730503,
 	  "Amplitude": 4,
 	  "Latitude": 12.7,
 	  "Longitude": -23.1,
@@ -591,10 +750,13 @@
 	  "Class": 2,
 	  "X_coord": 0.017946352898027124,
 	  "Y_coord": -0.007654768202377754,
-	  "Z_coord": 0.00439692408705675
+	  "Z_coord": 0.00439692408705675,
+	  "start": 2144,
+	  "finish": 2155,
+	  "duration": 11
 	},
 	{
-	  "Date YYYYMMDD": 19740519,
+	  "Date_YYYYMMDD": 19740519,
 	  "Amplitude": 4.9,
 	  "Latitude": 48.74,
 	  "Longitude": 49.17,
@@ -602,10 +764,13 @@
 	  "Class": 2,
 	  "X_coord": 0.008623544177947967,
 	  "Y_coord": 0.00997990304886363,
-	  "Z_coord": 0.015034494369491183
+	  "Z_coord": 0.015034494369491183,
+	  "start": 2317,
+	  "finish": 2346,
+	  "duration": 29
 	},
 	{
-	  "Date YYYYMMDD": 19730430,
+	  "Date_YYYYMMDD": 19730430,
 	  "Amplitude": 2,
 	  "Latitude": 9.36,
 	  "Longitude": -47.41,
@@ -613,10 +778,13 @@
 	  "Class": 2,
 	  "X_coord": 0.01335474464815315,
 	  "Y_coord": -0.014528264052582942,
-	  "Z_coord": 0.0032527433038976716
+	  "Z_coord": 0.0032527433038976716,
+	  "start": 2354,
+	  "finish": 0,
+	  "duration": 6
 	},
 	{
-	  "Date YYYYMMDD": 19740218,
+	  "Date_YYYYMMDD": 19740218,
 	  "Amplitude": 3,
 	  "Latitude": 8.63,
 	  "Longitude": 14.42,
@@ -624,10 +792,13 @@
 	  "Class": 2,
 	  "X_coord": 0.019150618570863216,
 	  "Y_coord": 0.0049241692783592375,
-	  "Z_coord": 0.0030010606910510786
+	  "Z_coord": 0.0030010606910510786,
+	  "start": 1721,
+	  "finish": 1740,
+	  "duration": 19
 	},
 	{
-	  "Date YYYYMMDD": 19770519,
+	  "Date_YYYYMMDD": 19770519,
 	  "Amplitude": 10,
 	  "Latitude": -2.36,
 	  "Longitude": 16.39,
@@ -635,6 +806,9 @@
 	  "Class": 2,
 	  "X_coord": 0.019170990527625255,
 	  "Y_coord": 0.00563869373371732,
-	  "Z_coord": -0.0008235624852066964
+	  "Z_coord": -0.0008235624852066964,
+	  "start": 2145,
+	  "finish": 2310,
+	  "duration": 85
 	}
   ]

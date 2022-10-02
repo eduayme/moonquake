@@ -1,7 +1,3 @@
-<svelte:head>
-  <link href="assets/Nasa.ttf" rel="stylesheet">
-</svelte:head>
-
 <script>
 	import { onMount } from 'svelte';
 	import { createScene, animate } from "./scene";
@@ -16,7 +12,23 @@
 		{ index: 2, name: "Deep", color: "#82b431", display: true, opacity: 1},
 		{ index: 3, name: "Artificial", color: "#c20100", display: true, opacity: 1}
 	]
-	$: toDisplay = legend.filter((x) => { return x.display; }).map(x => x.index);
+	$: toDisplay = legend.filter((x) => { return x.display; });
+	$: toDisplayIndexes = toDisplay.map(x => x.index);
+	$: moonquakeToDisplay = 0;
+	$: moonquakes = []
+
+	function loadData() {
+		fetch("public/data.json")
+			.then((response) => response.json())
+			.then((data) => {
+				const colors = [0xfb5000, 0x1db3e6, 0x82b431, 0xc20100];
+				moonquakes = data;
+				data.forEach(point => {
+					//console.log(point)
+				})
+			})
+			.catch((error) => console.log(error));
+	}
 
 	function toggleRotate() {
 		rotating = !rotating;
@@ -25,7 +37,8 @@
 
 	function toggleCheese() {
 		cheese = !cheese;
-		createScene(el, cheese, toDisplay)
+		createScene(el, cheese, toDisplayIndexes)
+		loadData()
 	}
 
 	function toggleDisplay(item) {
@@ -33,12 +46,23 @@
 		item.opacity = item.display ? 1 : 0.5
 		legend = legend
 		toDisplay = legend.filter((x) => { return x.display; }).map(x => x.index);
-		console.log("x:", toDisplay)
-		createScene(el, cheese, toDisplay)
+		createScene(el, cheese, toDisplayIndexes)
+		loadData()
+	}
+	function actionToDisplay(plus) {
+		moonquakeToDisplay += plus;
+
+		const lastPos = moonquakes.length-1
+		if (moonquakeToDisplay < 0) {
+		  moonquakeToDisplay = lastPos
+		} else if (moonquakeToDisplay > lastPos) {
+		  moonquakeToDisplay = 0
+		}
 	}
 
 	onMount(() => {
-	    createScene(el, cheese, toDisplay)
+	    createScene(el, cheese, toDisplayIndexes)
+		loadData()
 	});
 </script>
 
@@ -81,5 +105,41 @@
 		</div>
 	{/each}
 </div>
+
+{#if moonquakes.length > 0}
+<div class="info">
+	<div class="info-content">
+		<div class="info-action" on:click={() => actionToDisplay(-1)}>
+			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.33337 20H31.6667M8.33337 20L18.3334 30M8.33337 20L18.3334 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</div>
+		<div class="info-card">
+			<h1>Moonquake #{moonquakeToDisplay+1}</h1>
+			<div class="info-card-details" >
+				<p>{ new Date(
+					moonquakes[moonquakeToDisplay]["Date_YYYYMMDD"].toString().substring(0, 4),
+					moonquakes[moonquakeToDisplay]["Date_YYYYMMDD"].toString().substring(4, 6),
+					moonquakes[moonquakeToDisplay]["Date_YYYYMMDD"].toString().substring(6, 8)
+				  ).toLocaleDateString("en-US", {
+						weekday: 'long',
+						year: 'numeric',
+						month: 'long',
+						day: 'numeric'
+					})
+				}</p>
+				<p>Amplitude: <span>{ moonquakes[moonquakeToDisplay]["Amplitude"] }</span></p>
+				<p>Type: <span>{ legend.find(e => e.index == moonquakes[moonquakeToDisplay]["Class"]).name }</span></p>
+				<p>Duration: <span>{ moonquakes[moonquakeToDisplay]["duration"] } min</span></p>
+			</div>
+		</div>
+		<div class="info-action" on:click={() => actionToDisplay(+1)}>
+			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.33337 20H31.6667M31.6667 20L21.6667 30M31.6667 20L21.6667 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</div>
+	</div>
+</div>
+{/if}
 
 <canvas bind:this={el}></canvas>
