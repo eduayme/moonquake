@@ -19,7 +19,6 @@ const createMoon = () => {
     ? "assets/displacement_cheese.png"
     : "assets/displacement.jpeg";
   const universeURL = "assets/universe.jpeg";
-  console.log(textureURL)
 
   animationFrame = null;
   scene = new THREE.Scene();

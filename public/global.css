@@ -53,11 +53,17 @@ body {
     align-content: flex-end;
 }
 .legend-item {
-	padding: 6px;
+	padding: 8px 12px;
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
 	font-size: 20px;
+	border-radius: 6px;
+}
+.legend-item:hover {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	cursor: pointer;
 }
 .legend-color {
 	width: 16px;

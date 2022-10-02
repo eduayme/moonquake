@@ -10,11 +10,11 @@
 	let el;
 	let rotating = true;
 	let cheese = false;
-	let legend = [
-		{ name: "Superficial", color: "#fb5000"},
-		{ name: "Meteorite", color: "#1db3e6"},
-		{ name: "Deep", color: "#82b431"},
-		{ name: "Artificial", color: "#c20100"}
+	$: legend = [
+		{ name: "Superficial", color: "#fb5000", display: true, opacity: 1},
+		{ name: "Meteorite", color: "#1db3e6", display: true, opacity: 1},
+		{ name: "Deep", color: "#82b431", display: true, opacity: 1},
+		{ name: "Artificial", color: "#c20100", display: true, opacity: 1}
 	]
 
 	function toggleRotate() {
@@ -24,6 +24,14 @@
 
 	function toggleCheese() {
 		cheese = !cheese;
+		createScene(el, cheese)
+	}
+
+	function toggleDisplay(item) {
+		console.log(item)
+		item.display = !item.display
+		item.opacity = item.display ? 1 : 0.5
+		legend = legend
 		createScene(el, cheese)
 	}
 
@@ -65,7 +73,7 @@
 
 <div class="legend" style="top:120px">
 	{#each legend as item}
-		<div class="legend-item">
+		<div class="legend-item" on:click={() => toggleDisplay(item)} style="opacity: {item.opacity}">
 			<div class="legend-color" style="background-color: {item.color}"></div>
 			<div class="legend-name">{ item.name }</div>
 		</div>
