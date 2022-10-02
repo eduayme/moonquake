@@ -42,7 +42,8 @@
 		item.display = !item.display
 		item.opacity = item.display ? 1 : 0.5
 		legend = legend
-		toDisplay = legend.filter((x) => { return x.display; }).map(x => x.index);
+		toDisplay = legend.filter((x) => { return x.display; });
+		toDisplayIndexes = toDisplay.map(x => x.index);
 		createScene(el, cheese, toDisplayIndexes)
 		loadData()
 	}
@@ -51,9 +52,9 @@
 
 		const lastPos = moonquakes.length-1
 		if (moonquakeToDisplay < 0) {
-		  moonquakeToDisplay = lastPos
+		    moonquakeToDisplay = lastPos
 		} else if (moonquakeToDisplay > lastPos) {
-		  moonquakeToDisplay = 0
+		    moonquakeToDisplay = 0
 		}
 	}
 
