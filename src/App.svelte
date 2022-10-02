@@ -73,7 +73,7 @@
 	{/if}
 </button>
 
-<div class="legend" style="top:120px">
+<div class="legend" style="top:60px">
 	{#each legend as item}
 		<div class="legend-item" on:click={() => toggleDisplay(item)} style="opacity: {item.opacity}">
 			<div class="legend-color" style="background-color: {item.color}"></div>

@@ -40,7 +40,7 @@ body {
 
 .legend {
 	position: absolute;
-	right: 20px;
+	left: 20px;
 	padding: 20px 0;
 	background: transparent;
 	color: white;
@@ -48,9 +48,9 @@ body {
 	display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-wrap: nowrap;
-    align-content: flex-end;
+    align-content: flex-start;
 }
 .legend-item {
 	padding: 8px 12px;
