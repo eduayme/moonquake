@@ -24,11 +24,11 @@ var textureLoader = new THREE.TextureLoader();
 var texture = textureLoader.load(textureURL);
 var displacementMap = textureLoader.load(displacementURL);
 
-const material = new THREE.MeshPhongMaterial({
+var material = new THREE.MeshPhongMaterial({
   color: 0xffffff,
   map: texture,
   displacementMap: displacementMap,
-  displacementScale: 0.06,
+  displacementScale: 0.03,
   bumpMap: displacementMap,
   bumpScale: 0.04,
   reflectivity: 0,
@@ -36,8 +36,9 @@ const material = new THREE.MeshPhongMaterial({
 });
 
 var moon = new THREE.Mesh(geometry, material);
+moon.position.set(0, 0, 0);
 
-const light = new THREE.DirectionalLight(0xffffff, 1);
+var light = new THREE.DirectionalLight(0xffffff, 1);
 light.position.set(-100, 10, 50);
 scene.add(light);
 
@@ -58,11 +59,37 @@ var worldMaterial = new THREE.MeshBasicMaterial({
 });
 var world = new THREE.Mesh(worldGeometry, worldMaterial);
 scene.add(world);
-
 scene.add(moon);
+
+geometry = new THREE.SphereGeometry(1.5, 60, 60);
+material = new THREE.MeshBasicMaterial({
+  color: 0xFB5000,
+  transparent: true,
+  opacity: 0.25,
+});
+
+const loadData = () => {
+  fetch('public/data.json')
+  .then(response => response.json())
+  .then(data => {
+    const colors = [0xFB5000, 0x1DB3E6, 0x82B431, 0xC20100]
+    data.forEach(point => {
+      geometry = new THREE.SphereGeometry(0.05, 60, 60);
+      material = new THREE.MeshBasicMaterial({
+        color: colors[point.Class],
+        transparent: false
+      });
+    var sphere = new THREE.Mesh(geometry,material)
+      sphere.position.set(point.Y_coord * 100, point.X_coord * 100, point.Z_coord * 100);
+      moon.add(sphere)
+    })
+  })
+  .catch(error => console.log(error));
+}
+
 camera.position.z = 5;
 
-const PI = 3.1415;
+const PI = Math.PI;
 const RADIUS_X = 0.02;
 const RADIUS_Y = 1.54;
 moon.rotation.x = PI * RADIUS_X;
@@ -89,6 +116,7 @@ const resize = () => {
 };
 
 export const createScene = (el) => {
+  loadData();
   renderer = new THREE.WebGLRenderer({ antialias: true, canvas: el });
   resize();
   startAnimation();
