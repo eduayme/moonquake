@@ -11,11 +11,12 @@
 	let rotating = true;
 	let cheese = false;
 	$: legend = [
-		{ name: "Superficial", color: "#fb5000", display: true, opacity: 1},
-		{ name: "Meteorite", color: "#1db3e6", display: true, opacity: 1},
-		{ name: "Deep", color: "#82b431", display: true, opacity: 1},
-		{ name: "Artificial", color: "#c20100", display: true, opacity: 1}
+		{ index: 0, name: "Superficial", color: "#fb5000", display: true, opacity: 1},
+		{ index: 1, name: "Meteorite", color: "#1db3e6", display: true, opacity: 1},
+		{ index: 2, name: "Deep", color: "#82b431", display: true, opacity: 1},
+		{ index: 3, name: "Artificial", color: "#c20100", display: true, opacity: 1}
 	]
+	$: toDisplay = legend.filter((x) => { return x.display; }).map(x => x.index);
 
 	function toggleRotate() {
 		rotating = !rotating;
@@ -24,19 +25,20 @@
 
 	function toggleCheese() {
 		cheese = !cheese;
-		createScene(el, cheese)
+		createScene(el, cheese, toDisplay)
 	}
 
 	function toggleDisplay(item) {
-		console.log(item)
 		item.display = !item.display
 		item.opacity = item.display ? 1 : 0.5
 		legend = legend
-		createScene(el, cheese)
+		toDisplay = legend.filter((x) => { return x.display; }).map(x => x.index);
+		console.log("x:", toDisplay)
+		createScene(el, cheese, toDisplay)
 	}
 
 	onMount(() => {
-	    createScene(el, cheese)
+	    createScene(el, cheese, toDisplay)
 	});
 </script>
 

@@ -92,7 +92,7 @@ const createMoon = () => {
   moon.rotation.y = PI * RADIUS_Y;
 };
 
-const loadData = () => {
+const loadData = (legendDisplay) => {
   fetch("public/data.json")
     .then((response) => response.json())
     .then((data) => {
@@ -100,25 +100,27 @@ const loadData = () => {
       const maxAmplitude = Math.max(...data.map(p => p.Amplitude));
 
       data.forEach(point => {
-        var geometry = new THREE.SphereGeometry(0.05, 60, 60);
-        var material = new THREE.MeshBasicMaterial({
-          color: colors[point.Class],
-          transparent: true,
-          opacity: 0.6,
-        });
-        var center = new THREE.Mesh(geometry,material)
-        center.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
-        moon.add(center)
+        if (legendDisplay.some(p => p == point.Class)) {
+          var geometry = new THREE.SphereGeometry(0.05, 60, 60);
+          var material = new THREE.MeshBasicMaterial({
+            color: colors[point.Class],
+            transparent: true,
+            opacity: 0.6,
+          });
+          var center = new THREE.Mesh(geometry,material)
+          center.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
+          moon.add(center)
 
-        geometry = new THREE.SphereGeometry(Math.max(0.1, point.Amplitude/maxAmplitude), 60, 60);
-        material = new THREE.MeshBasicMaterial({
-          color: colors[point.Class],
-          transparent: true,
-          opacity: 0.2,
-        });
-        center = new THREE.Mesh(geometry,material)
-        center.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
-        moon.add(center)
+          geometry = new THREE.SphereGeometry(Math.max(0.1, point.Amplitude/maxAmplitude), 60, 60);
+          material = new THREE.MeshBasicMaterial({
+            color: colors[point.Class],
+            transparent: true,
+            opacity: 0.2,
+          });
+          center = new THREE.Mesh(geometry,material)
+          center.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
+          moon.add(center)
+        }
       })
     })
     .catch((error) => console.log(error));
@@ -144,11 +146,11 @@ const resize = () => {
   camera.updateProjectionMatrix();
 };
 
-export const createScene = (el, cheese) => {
+export const createScene = (el, cheese, legendDisplay) => {
   pauseAnimation();
   cheeseMode = cheese;
   createMoon();
-  loadData();
+  loadData(legendDisplay);
   renderer = new THREE.WebGLRenderer({ antialias: true, canvas: el });
   resize();
   startAnimation();
