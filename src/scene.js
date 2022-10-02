@@ -35,7 +35,7 @@ const createMoon = () => {
 
   renderer.setSize(window.innerWidth, window.innerHeight);
 
-  var geometry = new THREE.SphereGeometry(2, 60, 60);
+  var geometry = new THREE.SphereGeometry(2, 40, 40);
   var textureLoader = new THREE.TextureLoader();
   var texture = textureLoader.load(textureURL);
   var displacementMap = textureLoader.load(displacementURL);
