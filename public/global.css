@@ -85,7 +85,6 @@ body {
 
 .info-content {
 	background: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(20px);
 	background: transparent;
 	backdrop-filter: blur(4px);
 	color: white;
@@ -95,9 +94,6 @@ body {
 	display: inline-grid;
 	grid-template-columns: max-content max-content max-content;
 }
-.info:hover {
-	backdrop-filter: blur(8px);
-}
 .info-action {
 	display: flex;
     justify-content: center;
@@ -106,14 +102,13 @@ body {
 	padding: 8px 12px;
 	border-radius: 6px;
 }
-.info-card:hover,
 .info-action:hover {
 	background: linear-gradient(204.09deg, #071945 -64.78%, #071332 97.26%);
+	backdrop-filter: blur(8px);
+	cursor: pointer;
 }
 .info-card {
-	cursor: pointer;
 	padding: 16px 20px;
-	border-radius: 6px;
 }
 .info-card h3 {
 	margin-top: 0;

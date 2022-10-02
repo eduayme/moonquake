@@ -23,9 +23,6 @@
 			.then((data) => {
 				const colors = [0xfb5000, 0x1db3e6, 0x82b431, 0xc20100];
 				moonquakes = data;
-				data.forEach(point => {
-					//console.log(point)
-				})
 			})
 			.catch((error) => console.log(error));
 	}
@@ -114,7 +111,7 @@
 				<path d="M8.33337 20H31.6667M8.33337 20L18.3334 30M8.33337 20L18.3334 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 			</svg>
 		</div>
-		<div class="info-card">
+		<div class="info-card" on:click={() => activeMeteorit(moonquakeToDisplay)}>
 			<h3>Moonquake #{moonquakeToDisplay+1}</h3>
 			<div class="info-card-details" >
 				<p>{ new Date(
