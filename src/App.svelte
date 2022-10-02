@@ -115,7 +115,7 @@
 			</svg>
 		</div>
 		<div class="info-card">
-			<h1>Moonquake #{moonquakeToDisplay+1}</h1>
+			<h3>Moonquake #{moonquakeToDisplay+1}</h3>
 			<div class="info-card-details" >
 				<p>{ new Date(
 					moonquakes[moonquakeToDisplay]["Date_YYYYMMDD"].toString().substring(0, 4),
