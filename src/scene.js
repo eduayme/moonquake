@@ -1,99 +1,117 @@
 import * as THREE from "three";
 import { OrbitControls } from "./OrbitControls";
 
-const textureURL = "assets/texture.jpeg";
-const displacementURL = "assets/displacement.jpeg";
-const universeURL = "assets/universe.jpeg";
-
+var cheeseMode;
 var animationFrame = null;
-var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
-);
-var renderer = new THREE.WebGLRenderer();
-var controls = new OrbitControls(camera, renderer.domElement);
-controls.enablePan = false;
+var scene = null;
+var camera = null;
+var renderer = null;
+var controls = null;
+var moon = null;
+var light = null;
+var world = null;
 
-renderer.setSize(window.innerWidth, window.innerHeight);
+const createMoon = () => {
+  const textureURL = cheeseMode
+    ? "assets/texture_cheese.jpg"
+    : "assets/texture.jpeg";
+  const displacementURL = cheeseMode
+    ? "assets/displacement_cheese.png"
+    : "assets/displacement.jpeg";
+  const universeURL = "assets/universe.jpeg";
+  console.log(textureURL)
 
-var geometry = new THREE.SphereGeometry(2, 60, 60);
-var textureLoader = new THREE.TextureLoader();
-var texture = textureLoader.load(textureURL);
-var displacementMap = textureLoader.load(displacementURL);
+  animationFrame = null;
+  scene = new THREE.Scene();
+  camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
+  renderer = new THREE.WebGLRenderer();
+  controls = new OrbitControls(camera, renderer.domElement);
+  controls.enablePan = false;
 
-var material = new THREE.MeshPhongMaterial({
-  color: 0xffffff,
-  map: texture,
-  displacementMap: displacementMap,
-  displacementScale: 0.03,
-  bumpMap: displacementMap,
-  bumpScale: 0.04,
-  reflectivity: 0,
-  shininess: 0,
-});
+  renderer.setSize(window.innerWidth, window.innerHeight);
 
-var moon = new THREE.Mesh(geometry, material);
-moon.position.set(0, 0, 0);
+  var geometry = new THREE.SphereGeometry(2, 60, 60);
+  var textureLoader = new THREE.TextureLoader();
+  var texture = textureLoader.load(textureURL);
+  var displacementMap = textureLoader.load(displacementURL);
 
-var light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(-100, 10, 50);
-scene.add(light);
+  var material = new THREE.MeshPhongMaterial({
+    color: cheeseMode ? 0xfad126 : 0xffffff,
+    map: texture,
+    displacementMap: displacementMap,
+    displacementScale: cheeseMode ? 0.08 : 0.03,
+    bumpMap: displacementMap,
+    bumpScale: cheeseMode ? 0.08 : 0.04,
+    reflectivity: 0,
+    shininess: 0,
+  });
 
-var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.1);
-hemiLight.color.setHSL(0.6, 1, 0.6);
-hemiLight.groundColor.setHSL(0.095, 1, 0.75);
-hemiLight.position.set(0, 0, 0);
-scene.add(hemiLight);
+  moon = new THREE.Mesh(geometry, material);
+  moon.position.set(0, 0, 0);
 
-var worldTextureLoader = new THREE.TextureLoader();
-var worldTexture = worldTextureLoader.load(universeURL);
-var worldGeometry = new THREE.SphereGeometry(1000, 60, 60);
-var worldMaterial = new THREE.MeshBasicMaterial({
-  color: 0xffffff,
-  side: THREE.BackSide,
-  map: worldTexture,
-  transparent: true,
-});
-var world = new THREE.Mesh(worldGeometry, worldMaterial);
-scene.add(world);
-scene.add(moon);
+  var light = new THREE.DirectionalLight(0xffffff, 1);
+  light.position.set(-100, 10, 50);
+  scene.add(light);
 
-geometry = new THREE.SphereGeometry(1.5, 60, 60);
-material = new THREE.MeshBasicMaterial({
-  color: 0xFB5000,
-  transparent: true,
-  opacity: 0.25,
-});
+  var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.1);
+  hemiLight.color.setHSL(0.6, 1, 0.6);
+  hemiLight.groundColor.setHSL(0.095, 1, 0.75);
+  hemiLight.position.set(0, 0, 0);
+  scene.add(hemiLight);
+
+  var worldTextureLoader = new THREE.TextureLoader();
+  var worldTexture = worldTextureLoader.load(universeURL);
+  var worldGeometry = new THREE.SphereGeometry(1000, 60, 60);
+  var worldMaterial = new THREE.MeshBasicMaterial({
+    color: 0xffffff,
+    side: THREE.BackSide,
+    map: worldTexture,
+    transparent: true,
+  });
+  world = new THREE.Mesh(worldGeometry, worldMaterial);
+  scene.add(world);
+  scene.add(moon);
+
+  geometry = new THREE.SphereGeometry(1.5, 60, 60);
+  material = new THREE.MeshBasicMaterial({
+    color: 0xfb5000,
+    transparent: true,
+    opacity: 0.25,
+  });
+
+  camera.position.z = 5;
+
+  const PI = Math.PI;
+  const RADIUS_X = 0.02;
+  const RADIUS_Y = 1.54;
+  moon.rotation.x = PI * RADIUS_X;
+  moon.rotation.y = PI * RADIUS_Y;
+};
 
 const loadData = () => {
-  fetch('public/data.json')
-  .then(response => response.json())
-  .then(data => {
-    const colors = [0xFB5000, 0x1DB3E6, 0x82B431, 0xC20100]
-    data.forEach(point => {
-      geometry = new THREE.SphereGeometry(0.05, 60, 60);
-      material = new THREE.MeshBasicMaterial({
-        color: colors[point.Class],
-        transparent: false
-      });
-    var sphere = new THREE.Mesh(geometry,material)
-      sphere.position.set(point.Y_coord * 100, point.X_coord * 100, point.Z_coord * 100);
-      moon.add(sphere)
+  fetch("public/data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const colors = [0xfb5000, 0x1db3e6, 0x82b431, 0xc20100];
+      data.forEach(point => {
+        var geometry = new THREE.SphereGeometry(0.05, 60, 60);
+        var material = new THREE.MeshBasicMaterial({
+          color: colors[point.Class],
+          transparent: true,
+          opacity: 0.6,
+        });
+        var sphere = new THREE.Mesh(geometry,material)
+        sphere.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
+        moon.add(sphere)
+      })
     })
-  })
-  .catch(error => console.log(error));
-}
-
-camera.position.z = 5;
-
-const PI = Math.PI;
-const RADIUS_X = 0.02;
-const RADIUS_Y = 1.54;
-moon.rotation.x = PI * RADIUS_X;
-moon.rotation.y = PI * RADIUS_Y;
+    .catch((error) => console.log(error));
+};
 
 const startAnimation = () => {
   animationFrame = requestAnimationFrame(startAnimation);
@@ -115,7 +133,10 @@ const resize = () => {
   camera.updateProjectionMatrix();
 };
 
-export const createScene = (el) => {
+export const createScene = (el, cheese) => {
+  pauseAnimation();
+  cheeseMode = cheese;
+  createMoon();
   loadData();
   renderer = new THREE.WebGLRenderer({ antialias: true, canvas: el });
   resize();

@@ -27,7 +27,7 @@ body {
 	border: 1px solid white;
 	border-radius: 6px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 18px;
 }
 .animation-btn:hover {
 	background: linear-gradient(204.09deg, #071945 -64.78%, #071332 97.26%);
