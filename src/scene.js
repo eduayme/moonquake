@@ -98,6 +98,8 @@ const loadData = () => {
     .then((response) => response.json())
     .then((data) => {
       const colors = [0xfb5000, 0x1db3e6, 0x82b431, 0xc20100];
+      const maxAmplitude = Math.max(...data.map(p => p.Amplitude));
+
       data.forEach(point => {
         var geometry = new THREE.SphereGeometry(0.05, 60, 60);
         var material = new THREE.MeshBasicMaterial({
@@ -105,9 +107,19 @@ const loadData = () => {
           transparent: true,
           opacity: 0.6,
         });
-        var sphere = new THREE.Mesh(geometry,material)
-        sphere.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
-        moon.add(sphere)
+        var center = new THREE.Mesh(geometry,material)
+        center.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
+        moon.add(center)
+
+        geometry = new THREE.SphereGeometry(Math.max(0.1, point.Amplitude/maxAmplitude), 60, 60);
+        material = new THREE.MeshBasicMaterial({
+          color: colors[point.Class],
+          transparent: true,
+          opacity: 0.2,
+        });
+        center = new THREE.Mesh(geometry,material)
+        center.position.set(point.X_coord * 100, point.Y_coord * 100, point.Z_coord * 100);
+        moon.add(center)
       })
     })
     .catch((error) => console.log(error));
