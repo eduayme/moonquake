@@ -2,6 +2,7 @@ html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	font-family: Nasa, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -20,15 +21,46 @@ body {
 .animation-btn {
 	position: absolute;
 	top: 26px;
-	right: 40px;
-	padding: 6px 12px;
+	right: 20px;
+	padding: 8px 12px;
 	background: transparent;
 	color: white;
 	border: 1px solid white;
 	border-radius: 6px;
 	cursor: pointer;
 	font-size: 18px;
+	font-family: Nasa, Arial, Helvetica, sans-serif;
+	display: inline-flex;
+	align-items: flex-start;
+	gap: 4px;
 }
 .animation-btn:hover {
 	background: linear-gradient(204.09deg, #071945 -64.78%, #071332 97.26%);
+}
+
+.legend {
+	position: absolute;
+	right: 20px;
+	padding: 20px 0;
+	background: transparent;
+	color: white;
+	font-size: 18px;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+}
+.legend-item {
+	padding: 6px;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 20px;
+}
+.legend-color {
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
 }

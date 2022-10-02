@@ -1,3 +1,7 @@
+<svelte:head>
+  <link href="assets/Nasa.ttf" rel="stylesheet">
+</svelte:head>
+
 <script>
 	import { onMount } from 'svelte';
 	import { createScene, animate } from "./scene";
@@ -6,6 +10,12 @@
 	let el;
 	let rotating = true;
 	let cheese = false;
+	let legend = [
+		{ name: "Superficial", color: "#fb5000"},
+		{ name: "Meteorite", color: "#1db3e6"},
+		{ name: "Deep", color: "#82b431"},
+		{ name: "Artificial", color: "#c20100"}
+	]
 
 	function toggleRotate() {
 		rotating = !rotating;
@@ -52,5 +62,14 @@
 		Cheese
 	{/if}
 </button>
+
+<div class="legend" style="top:120px">
+	{#each legend as item}
+		<div class="legend-item">
+			<div class="legend-color" style="background-color: {item.color}"></div>
+			<div class="legend-name">{ item.name }</div>
+		</div>
+	{/each}
+</div>
 
 <canvas bind:this={el}></canvas>

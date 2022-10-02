@@ -44,7 +44,7 @@ const createMoon = () => {
     color: cheeseMode ? 0xfad126 : 0xffffff,
     map: texture,
     displacementMap: displacementMap,
-    displacementScale: cheeseMode ? 0.08 : 0.03,
+    displacementScale: cheeseMode ? 0.06 : 0.03,
     bumpMap: displacementMap,
     bumpScale: cheeseMode ? 0.08 : 0.04,
     reflectivity: 0,
